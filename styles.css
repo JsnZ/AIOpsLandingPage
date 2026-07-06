@@ -14,6 +14,62 @@
   --container: 1180px;
 }
 
+/* Compact content layout */
+.section { padding-top: 54px; padding-bottom: 54px; }
+.section-heading { margin-bottom: 24px; }
+.stats-bar .stat-single { font-size: 21px; }
+.stats-bar .stat-single > span { font-size: 36px; }
+.pain-list h3 { display: none; }
+.pain-layout + .section-footer-action { margin-top: 28px; }
+.audience-card { min-height: 132px; display: flex; align-items: center; padding: 30px 82px 30px 24px; }
+.audience-card p, .audience-card > b { display: none; }
+.audience-card h3 { margin: 0; }
+.curriculum-tabs { display: none; }
+.curriculum-columns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; align-items: start; }
+.course-column-title { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; padding: 15px 18px; color: var(--ink); background: #eaf2ff; border-radius: 15px; font-size: 18px; }
+.course-column-title span { color: var(--blue); }
+.course-panel { display: block !important; }
+.course-panel .accordion-content[hidden], .faq-accordion .accordion-content[hidden] { display: block; }
+.course-panel .accordion-item h3 button, .faq-accordion .accordion-item h3 button { cursor: default; pointer-events: none; }
+.course-panel .accordion-item h3 button > b, .faq-accordion .accordion-item h3 button > b { display: none; }
+.course-panel .accordion-content { padding-top: 0; }
+.teacher-content { display: flex; flex-direction: column; }
+.teacher-talk { align-self: flex-start; margin-top: auto; padding-left: 18px; padding-right: 18px; min-height: 42px; }
+.faq-layout { display: block; }
+.faq-layout > .section-heading { max-width: 760px; margin-left: auto; margin-right: auto; text-align: center; }
+.faq-accordion { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.faq-accordion .accordion-item { margin: 0; }
+.faq-action { grid-column: 1 / -1; }
+.floating-offer { position: fixed; z-index: 85; left: 0; right: 0; bottom: 0; padding: 12px 0; color: #fff; background: linear-gradient(135deg,#194b95 0%,#2174bb 58%,#16a083 100%); box-shadow: 0 -12px 35px rgba(16,50,98,.22); }
+.floating-offer .container { display: grid; grid-template-columns: auto 1fr auto; gap: 30px; align-items: center; }
+.floating-offer h2 { margin: 0; color: #fff; font-size: 25px; white-space: nowrap; }
+.floating-offer p { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px; margin: 0; color: #e3efff; font-size: 13px; }
+.floating-offer p span { white-space: nowrap; }
+.floating-offer .button { min-height: 48px; flex-direction: column; gap: 1px; padding: 6px 24px; background: #fff; color: var(--blue); white-space: nowrap; }
+.floating-offer .button small { color: #078c64; font-size: 10px; }
+.site-footer { padding-bottom: 92px; }
+
+@media (max-width: 860px) {
+  .section { padding-top: 48px; padding-bottom: 48px; }
+  .curriculum-columns, .faq-accordion { grid-template-columns: 1fr; }
+  .floating-offer .container { grid-template-columns: 1fr auto; gap: 10px 16px; }
+  .floating-offer h2 { font-size: 19px; }
+  .floating-offer p { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; font-size: 11px; }
+}
+
+@media (max-width: 600px) {
+  .section { padding-top: 42px; padding-bottom: 42px; }
+  .stats-bar .stat-single { font-size: 12px; }
+  .stats-bar .stat-single > span { font-size: 25px; }
+  .audience-card { min-height: 108px; padding: 24px 72px 24px 20px; }
+  .floating-offer { bottom: 69px; }
+  .floating-offer p { display: none; }
+  .floating-offer .container { grid-template-columns: 1fr auto; }
+  .floating-offer h2 { font-size: 16px; white-space: normal; }
+  .floating-offer .button { min-height: 42px; padding: 5px 14px; }
+  .site-footer { padding-bottom: 150px; }
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 82px; }
 body { margin: 0; color: var(--ink); background: #fff; font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -484,4 +540,71 @@ h1 em, h2 em { color: transparent; background: linear-gradient(100deg,var(--blue
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Final compact overrides */
+.section { padding-top: 44px; padding-bottom: 44px; }
+.section-heading, .section-heading.wide-heading, .projects-section .section-heading { max-width: 780px; margin: 0 auto 28px; text-align: center; }
+.section-heading h2, .section-heading.no-wrap-heading h2 { margin: 0 0 12px; }
+.section-heading p { margin: 0; }
+.pain-section .section-heading p { white-space: normal; }
+.stats-bar .stat-single { font-size: 21px; }
+.stats-bar .stat-single > span { font-size: 36px; }
+.pain-list h3 { display: none; }
+.pain-layout + .section-footer-action { margin-top: 28px; }
+.audience-card { min-height: 112px; display: flex; align-items: center; justify-content: flex-start; gap: 14px; padding: 24px; }
+.audience-card p, .audience-card > b { display: none; }
+.audience-card h3 { margin: 0; }
+.audience-card h3::after { display: none; }
+.audience-card .role-icon { position: relative; left: auto; right: auto; top: auto; flex: 0 0 auto; order: -1; }
+.curriculum-tabs { display: none; }
+.curriculum-columns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; align-items: start; }
+.course-panel { display: block !important; width: 100%; max-width: none; margin: 0; align-self: start; }
+.course-column-title { min-height: 56px; display: flex; align-items: center; gap: 10px; margin: 0 0 14px; padding: 13px 18px; color: var(--ink); background: #eaf2ff; border-radius: 15px; font-size: 18px; }
+.course-panel .accordion-content[hidden], .faq-accordion .accordion-content[hidden] { display: block; }
+.course-panel .accordion-item h3 button > b, .faq-accordion .accordion-item h3 button > b { display: none; }
+.course-panel .accordion-item h3 button { padding: 12px 16px 7px; }
+.course-panel .accordion-item h3 button > span { gap: 10px; white-space: nowrap; }
+.course-panel .accordion-content { padding: 0 16px 12px 61px; }
+.course-panel .accordion-content p { line-height: 1.55; }
+.teacher-content { display: flex; flex-direction: column; }
+.teacher-talk { align-self: flex-start; margin-top: auto; min-height: 42px; }
+.faq-layout { display: block; }
+.faq-layout > .section-heading { max-width: 760px; margin: 0 auto 28px !important; text-align: center; }
+.faq-accordion { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.faq-accordion .accordion-item { margin: 0; }
+.floating-offer { display: block; position: fixed; z-index: 85; left: 18px; right: 18px; bottom: 14px; padding: 10px 0; overflow: visible; color: #fff; background: linear-gradient(110deg,#0f55bd 0%,#1379bd 56%,#0ca77e 100%); border: 1px solid rgba(255,255,255,.28); border-radius: 22px; box-shadow: 0 18px 55px rgba(8,42,91,.32); }
+.floating-offer::before { content: ""; position: absolute; width: 260px; height: 260px; right: 17%; top: -190px; border: 38px solid rgba(255,255,255,.07); border-radius: 50%; }
+.floating-offer .container { position: relative; display: grid; grid-template-columns: 86px auto 1fr auto; gap: 28px; align-items: center; }
+.offer-mascot { position: relative; align-self: stretch; width: 86px; }
+.offer-mascot img { position: absolute; z-index: 2; left: -14px; bottom: -10px; width: 110px; max-width: none; height: auto; filter: drop-shadow(0 12px 20px rgba(3,35,83,.28)); }
+.floating-offer h2 { margin: 0; color: #fff; font-size: 24px; white-space: nowrap; }
+.floating-offer p { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px; margin: 0; color: #e9f5ff; font-size: 13px; font-weight: 650; }
+.floating-offer p span::before { content: "✓"; margin-right: 5px; color: #7ff0ca; }
+.floating-offer .button { min-height: 48px; flex-direction: row; gap: 7px; padding: 0 22px; background: #fff; color: var(--blue); white-space: nowrap; font-size: 14px; }
+.floating-offer .button, .floating-offer .button small { color: var(--blue); font-size: 14px; font-weight: 800; }
+.site-footer { padding-bottom: 92px; }
+
+@media (max-width: 860px) {
+  .curriculum-columns, .faq-accordion { grid-template-columns: 1fr; }
+  .floating-offer .container { grid-template-columns: 1fr auto; gap: 10px 16px; }
+  .offer-mascot { display: none; }
+  .floating-offer h2 { font-size: 19px; }
+  .floating-offer p { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; font-size: 11px; }
+}
+
+@media (max-width: 600px) {
+  .section { padding-top: 38px; padding-bottom: 38px; }
+  .stats-bar .stat-single { font-size: 12px; }
+  .stats-bar .stat-single > span { font-size: 25px; }
+  .audience-card { min-height: 94px; padding: 18px; }
+  .mobile-cta { display: none !important; }
+  .floating-offer { left: 10px; right: 10px; bottom: 10px; border-radius: 17px; }
+  .floating-offer p { display: none; }
+  .floating-offer .container { grid-template-columns: 48px 1fr auto; gap: 10px; }
+  .offer-mascot { display: block; width: 48px; }
+  .offer-mascot img { left: -8px; bottom: -10px; width: 68px; }
+  .floating-offer h2 { font-size: 15px; white-space: normal; }
+  .floating-offer .button { min-height: 42px; padding: 5px 14px; }
+  .site-footer { padding-bottom: 105px; }
 }
