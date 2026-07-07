@@ -57,39 +57,14 @@
 
     <section class="section pain-section" id="why">
       <div class="container">
-        <div class="section-heading wide-heading reveal"><h2>从传统运维到<em>AI运维</em></h2><p>随着大模型快速落地，越来越多企业开始将AI接入监控、日志、告警和自动化运维流程。能够把AI与运维结合的人，将拥有更强的竞争力。</p></div>
-        <div class="pain-layout">
-          <div class="pain-visual-column">
-          <div class="pain-visual reveal" aria-label="AIOps多源数据智能分析与自动处置示意图">
-            <div class="ops-grid"></div>
-            <div class="source-stack">
-              <div class="source-item source-blue"><i>Z</i><span><b>Zabbix</b><small>告警事件</small></span><em>128</em></div>
-              <div class="source-item source-green"><i>P</i><span><b>Prometheus</b><small>指标数据</small></span><em>2.4k</em></div>
-              <div class="source-item source-cyan"><i>E</i><span><b>EFK</b><small>实时日志</small></span><em>8.6k</em></div>
-            </div>
-            <div class="flow-rail"><i></i><i></i><i></i></div>
-            <div class="ai-engine">
-              <div class="engine-orbit"><span>AI</span><i></i><i></i><i></i></div>
-              <small>AIOPS ANALYSIS ENGINE</small>
-              <b>实时关联分析</b>
-              <div class="engine-status"><span></span>模型推理中</div>
-            </div>
-            <div class="insight-panel">
-              <div class="insight-head"><span>ROOT CAUSE</span><em>置信度 96%</em></div>
-              <strong>K8s Pod 内存泄漏</strong>
-              <p>关联 37 条告警与 1,284 条日志，已定位异常服务。</p>
-              <div class="insight-metrics"><span><i></i>噪声归并 73%</span><span><i></i>诊断耗时 3.2s</span></div>
-            </div>
-            <div class="auto-action"><span>✓</span><div><b>自动处置建议已生成</b><small>动态阈值 · Pod重启 · SOP调用</small></div></div>
-          </div>
-          </div>
-          <div class="pain-list reveal">
-            <article><span>01</span><div><h3>告警太多</h3><p class="pain-problem">传统运维：告警太多，人工排查效率低。</p><div class="upgrade-direction"><b>AIOps升级</b><p>AI自动分析告警并生成处理建议。</p></div></div></article>
-            <article><span>02</span><div><h3>日志繁杂</h3><p class="pain-problem">传统运维：日志繁杂，定位问题困难。</p><div class="upgrade-direction"><b>AIOps升级</b><p>AI智能日志归因与异常分析。</p></div></div></article>
-            <article><span>03</span><div><h3>阈值依赖经验</h3><p class="pain-problem">传统运维：监控阈值主要依靠人工经验设置。</p><div class="upgrade-direction"><b>AIOps升级</b><p>AI自动生成监控阈值。</p></div></div></article>
-            <article><span>04</span><div><h3>排障依赖个人</h3><p class="pain-problem">传统运维：关键经验难以沉淀和复用。</p><div class="upgrade-direction"><b>AIOps升级</b><p>知识库与智能体沉淀经验。</p></div></div></article>
-            <article><span>05</span><div><h3>重复工作繁琐</h3><p class="pain-problem">传统运维：巡检、重启、发布等工作长期占用时间。</p><div class="upgrade-direction"><b>AIOps升级</b><p>Python + K8s + MCP自动化运维。</p></div></div></article>
-          </div>
+        <div class="section-heading wide-heading reveal"><h2>从传统运维到<em>AI运维</em></h2><p>越来越多企业开始将AI接入监控、日志、告警和自动化运维流程，能够把AI与运维结合的人，将拥有更强的竞争力。</p></div>
+        <div class="ops-comparison reveal">
+          <div class="comparison-head"><span>运维场景</span><strong>传统运维</strong><strong>AIOps升级 🔥</strong></div>
+          <article><span>告警处理</span><p>告警数量多，依赖人工逐条排查，处理效率低</p><p>AI自动聚合分析告警，并生成处理建议</p></article>
+          <article><span>日志分析</span><p>日志分散且繁杂，人工检索难以快速定位问题</p><p>AI智能完成日志归因、异常识别与根因分析</p></article>
+          <article><span>阈值设置</span><p>监控阈值主要依靠个人经验，容易误报或漏报</p><p>AI结合历史数据自动生成并持续优化阈值</p></article>
+          <article><span>故障排查</span><p>关键经验依赖资深人员，难以沉淀和复用</p><p>知识库与智能体沉淀经验，辅助快速诊断</p></article>
+          <article><span>重复任务</span><p>巡检、重启、发布等工作长期占用人工时间</p><p>Python + K8s + MCP实现自动化智能运维</p></article>
         </div>
         <div class="section-footer-action reveal"><button class="button" type="button" data-open-lead-modal>了解课程详情</button></div>
       </div>
@@ -124,12 +99,8 @@
         </ol>
 
         <div class="section-heading centered curriculum-heading reveal"><h2>AIOps课程内容介绍</h2><p>18大精品模块，覆盖AI+运维完整技术体系</p></div>
-        <div class="curriculum-tabs reveal" role="tablist" aria-label="课程模块类型">
-          <button class="curriculum-tab active" type="button" role="tab" aria-selected="true" aria-controls="required-panel" id="required-tab" data-course-tab="required-panel"><span>10</span> 核心必修模块</button>
-          <button class="curriculum-tab" type="button" role="tab" aria-selected="false" aria-controls="advanced-panel" id="advanced-tab" data-course-tab="advanced-panel"><span>8</span> 进阶选修模块</button>
-        </div>
         <div class="curriculum-columns">
-        <div class="course-panel active" id="required-panel" role="tabpanel" aria-labelledby="required-tab">
+        <div class="course-panel active" id="required-panel">
           <h3 class="course-column-title">必修模块</h3>
           <div class="accordion course-accordion">
             <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span><i>01</i>AI大模型与开发基础</span><b>−</b></button></h3><div class="accordion-content"><p>学习大模型、Prompt、Agent、RAG等核心概念，建立AI应用开发基础认知。</p></div></article>
@@ -144,7 +115,7 @@
             <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>10</i>企业级AIOps实战</span><b>+</b></button></h3><div class="accordion-content" hidden><p>综合监控、告警、日志、Kubernetes与AI能力，完成企业级AIOps项目落地。</p></div></article>
           </div>
         </div>
-        <div class="course-panel" id="advanced-panel" role="tabpanel" aria-labelledby="advanced-tab">
+        <div class="course-panel" id="advanced-panel">
           <h3 class="course-column-title">进阶模块</h3>
           <div class="accordion course-accordion">
             <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span><i>A1</i>VibeCoding</span><b>−</b></button></h3><div class="accordion-content"><p>学习VibeCoding思维、提示词实战、Cursor开发与智能体应用构建。</p></div></article>
@@ -212,6 +183,18 @@
       </div>
     </section>
 
+    <section class="section resources-section" id="resources">
+      <div class="container">
+        <div class="section-heading reveal"><h2>学习资料免费领</h2></div>
+        <div class="resource-grid">
+          <article class="resource-card reveal"><h3>企业级智能运维助手：从私有化部署到知识库落地</h3><ul><li>DeepSeek + RAG 构建企业专属运维助手</li><li>打通私有知识库与大模型智能问答</li><li>掌握企业级 AI 运维私有化落地全流程</li></ul></article>
+          <article class="resource-card reveal"><h3>AI智能运维实战：告警降噪与故障根因分析</h3><ul><li>Prometheus + LLM 实现智能阈值优化与告警降噪</li><li>SkyWalking + LLM 自动定位微服务故障根因</li><li>覆盖告警分析、链路追踪、故障诊断核心场景</li></ul></article>
+        </div>
+        <div class="section-footer-action resource-action reveal"><button class="button" type="button" data-open-lead-modal>0元领取全套资料</button></div>
+        <p class="resource-gift reveal">加赠《DeepSeek使用指南：打造专属你的AI生产力引擎》</p>
+      </div>
+    </section>
+
     <section class="section faq-section" id="faq">
       <div class="container faq-layout">
         <div class="section-heading reveal"><h2>常见问题</h2><p>如果还有其他问题，可以提交咨询，我们会根据你的基础和目标给出学习建议。</p></div>
@@ -225,7 +208,7 @@
       </div>
     </section>
 
-    <aside class="floating-offer"><div class="container"><div class="offer-mascot" aria-hidden="true"><img src="assets/customer-service.png" alt=""></div><h2>随报随学，直接开课</h2><p><span>120+小时</span><span>18大模块</span><span>6大企业级实战</span><span>支持花呗分期</span><span>可开发票</span></p><button class="button" type="button" data-open-lead-modal><small>限时优惠</small>马上咨询</button></div></aside>
+    <aside class="floating-offer"><div class="container"><div class="offer-mascot" aria-hidden="true"><img src="assets/customer-service.png" alt=""></div><h2>随报随学，即时开课</h2><p><span>120+小时</span><span>18大模块</span><span>6大企业级实战</span><span>支持花呗分期</span><span>可开发票</span></p><button class="button" type="button" data-open-lead-modal><small>限时优惠</small>马上咨询</button></div></aside>
   </main>
 
   <footer class="site-footer">
