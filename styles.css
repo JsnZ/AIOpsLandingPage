@@ -587,6 +587,7 @@ h1 em, h2 em { color: transparent; background: linear-gradient(100deg,var(--blue
 
 @media (max-width: 600px) {
   .section { padding-top: 38px; padding-bottom: 38px; }
+  .audience-section .section-heading.no-wrap-heading h2 { font-size: 33px; white-space: normal; }
   .stats-bar .stat-single { font-size: 12px; }
   .stats-bar .stat-single > span { font-size: 25px; }
   .audience-card { min-height: 94px; padding: 18px; }
