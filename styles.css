@@ -601,3 +601,31 @@ h1 em, h2 em { color: transparent; background: linear-gradient(100deg,var(--blue
   .floating-offer .button { min-height: 42px; padding: 5px 14px; }
   .site-footer { padding-bottom: 105px; }
 }
+
+body.qr-modal-open { overflow: hidden; }
+.qr-modal { position: fixed; inset: 0; z-index: 1000; display: none; place-items: center; padding: 20px; }
+.qr-modal.open { display: grid; }
+.qr-modal-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; background: rgba(9,28,57,.62); border: 0; backdrop-filter: blur(6px); }
+.qr-modal-card { position: relative; width: min(520px,100%); overflow: hidden; padding: 42px 38px 0; background: linear-gradient(160deg,#f8fbff 0%,#eff8ff 48%,#eafaf5 100%); border: 1px solid rgba(255,255,255,.8); border-radius: 28px; box-shadow: 0 35px 90px rgba(4,29,72,.32); text-align: center; }
+.qr-modal-card::before { content: ""; position: absolute; width: 240px; height: 240px; right: -120px; top: -130px; border: 1px solid rgba(37,99,235,.1); border-radius: 50%; box-shadow: 0 0 0 34px rgba(16,185,129,.04),0 0 0 68px rgba(37,99,235,.025); }
+.qr-modal-close { position: absolute; z-index: 3; right: 18px; top: 15px; width: 42px; height: 42px; display: grid; place-items: center; padding: 0 0 3px; color: #718099; background: rgba(255,255,255,.72); border: 1px solid #dbe6f3; border-radius: 50%; font-family: Arial,sans-serif; font-size: 30px; line-height: 1; cursor: pointer; }
+.qr-modal-copy { position: relative; z-index: 1; }
+.qr-modal-copy h2 { margin: 0; color: var(--ink); font-size: 30px; letter-spacing: -.03em; }
+.qr-modal-copy p { margin: 12px 0 0; color: #40536e; font-size: 18px; font-weight: 700; line-height: 1.6; }
+.qr-modal-copy em { color: transparent; background: linear-gradient(90deg,var(--blue),var(--green)); background-clip: text; -webkit-background-clip: text; font-style: normal; }
+.qr-code { position: relative; z-index: 2; width: 210px; height: 210px; margin: 28px auto 42px; padding: 10px; background: #fff; border-radius: 18px; box-shadow: 0 16px 38px rgba(37,99,235,.16),0 0 0 2px #cfe0f2; }
+.qr-code img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.qr-modal-footer { position: relative; min-height: 142px; display: grid; place-items: end center; margin: 0 -38px; padding: 76px 30px 22px; overflow: hidden; color: #fff; background: transparent; font-size: 17px; font-weight: 750; }
+.qr-modal-footer::before, .qr-modal-footer::after { content: ""; position: absolute; z-index: 1; top: -34px; width: 67%; height: 116px; background: linear-gradient(145deg, #eaf7fc, #eaf7fc); border-top: 2px solid rgba(255,255,255,.82); border-radius: 50% 50% 0 0 / 34% 34% 0 0; }
+.qr-modal-footer::before { left: -10%; transform: rotate(13deg); transform-origin: right top; }
+.qr-modal-footer::after { right: -10%; transform: rotate(-13deg); transform-origin: left top; }
+.qr-modal-footer i { position: absolute; z-index: 2; left: -5%; right: -5%; bottom: -42px; height: 155px; background: linear-gradient(160deg,#2f83ec 0%,#198fc5 50%,#10b981 100%); border-top: 2px solid rgba(255,255,255,.7); clip-path: polygon(0 43%,50% 0,100% 43%,100% 100%,0 100%); filter: drop-shadow(0 -8px 18px rgba(17,85,151,.12)); }
+.qr-modal-footer span { position: relative; z-index: 3; }
+
+@media (max-width: 600px) {
+  .qr-modal-card { padding: 38px 22px 0; border-radius: 22px; }
+  .qr-modal-copy h2 { font-size: 24px; }
+  .qr-modal-copy p { font-size: 15px; }
+  .qr-code { width: 180px; height: 180px; margin: 24px auto 36px; }
+  .qr-modal-footer { min-height: 126px; margin: 0 -22px; padding: 68px 20px 18px; font-size: 15px; }
+}
