@@ -17,7 +17,7 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
       <nav class="main-nav" id="main-nav" aria-label="主导航">
-        <a href="#outcomes">学习收获</a><a href="#curriculum">课程体系</a><a href="#projects">实战项目</a><a href="#teachers">讲师介绍</a><a href="#faq">常见问题</a>
+        <a href="#why">课程介绍</a><a href="#curriculum">课程体系</a><a href="#projects">实战项目</a><a href="#teachers">讲师介绍</a><a href="#faq">常见问题</a>
       </nav>
       <button class="button button-small header-cta" type="button" data-open-lead-modal>免费试听</button>
     </div>
@@ -27,14 +27,18 @@
     <section class="hero">
       <div class="hero-grid container">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span>传统运维的下一站 · 智能运维</div>
-          <h1><em>AIOps</em>智能运维<br>实战精品班</h1>
-          <p class="hero-lead">从Zabbix、Prometheus、EFK到Kubernetes，系统掌握“AI+运维”落地实战，学会智能告警、日志分析、自动阈值、故障诊断、MLOps/LLMOps与MCP自然语言管理服务。</p>
+          <h1><em>AIOps</em>智能运维实战精品班</h1>
+          <p class="hero-slogan">AI不会淘汰运维，<strong>AIOps会。</strong></p>
+          <ul class="hero-checks" aria-label="课程特点">
+            <li><b>AI智能运维</b>：让AI参与监控、告警、日志分析与故障诊断，提升运维效率</li>
+            <li><b>企业级技术栈</b>：覆盖 Zabbix、Prometheus、EFK、Kubernetes等主流运维平台</li>
+            <li><b>真实项目实战</b>：6大企业级项目，从环境搭建到AI运维完整落地</li>
+            <li><b>未来运维能力</b>：掌握MLOps、LLMOps、MCP、自然语言管理基础设施</li>
+          </ul>
           <div class="hero-actions">
-            <button class="button" type="button" data-open-lead-modal>立即免费试听 <span aria-hidden="true">→</span></button>
+            <button class="button" type="button" data-open-lead-modal>免费试听第一课 <span aria-hidden="true">→</span></button>
             <a class="button button-ghost" href="#curriculum">查看学习路线</a>
           </div>
-          <ul class="hero-checks" aria-label="课程特点"><li>理论、工具、开发、项目与直播答疑</li><li>大模型应用开发 + K8s/云原生运维</li></ul>
         </div>
 
         <div class="hero-visual hero-image-visual reveal">
@@ -45,156 +49,108 @@
     </section>
 
     <div class="container stats-bar reveal">
-      <div><strong><span class="stat-value">18</span><small>个模块</small></strong><span class="stat-copy">10个必修核心模块 + 8个进阶选修模块</span></div>
-      <div><strong><span class="stat-value">120<sup>+</sup></span><small>小时</small></strong><span class="stat-copy">覆盖理论、工具、开发、项目与直播答疑</span></div>
-      <div><strong><span class="stat-value">8</span><small>场直播</small></strong><span class="stat-copy">每周一次，围绕大模型原理、Python、Zabbix、Prometheus、K8s等核心主题展开</span></div>
-      <div><strong><span class="stat-value">2</span><small>位讲师</small></strong><span class="stat-copy">大模型应用开发 + K8s/云原生运维双线并进</span></div>
+      <div><strong class="stat-single"><span>18</span>大精品模块</strong></div>
+      <div><strong class="stat-single"><span>120<sup>+</sup></span>小时课程</strong></div>
+      <div><strong class="stat-single"><span>8</span>场直播带学</strong></div>
+      <div><strong class="stat-single">双讲师授课</strong></div>
     </div>
 
     <section class="section pain-section" id="why">
       <div class="container">
-        <div class="section-heading wide-heading reveal"><span class="section-tag">WHY AIOPS</span><h2>为什么现在要学<em>AIOps？</em></h2><p>过去的运维，核心能力是会部署、会监控、会排障；但现在，企业系统越来越复杂，云原生架构、微服务、容器、数据库、中间件、日志、告警同时存在，单靠人工盯监控、翻日志、查根因，效率已经跟不上业务节奏。</p><p>AIOps不是简单把AI工具接到运维流程里，而是<strong>让运维从“被动救火”升级为“主动预测、智能分析、自动处理”</strong>。未来更有竞争力的运维，不只是会用Zabbix和Prometheus，更要能<strong>把大模型、知识库、脚本、API、K8s、日志平台整合起来</strong>，真正解决企业里的告警误判、根因定位、容量预测、自动化恢复等问题。</p></div>
-        <div class="pain-layout">
-          <div class="pain-visual reveal" aria-label="AIOps多源数据智能分析与自动处置示意图">
-            <div class="ops-grid"></div>
-            <div class="source-stack">
-              <div class="source-item source-blue"><i>Z</i><span><b>Zabbix</b><small>告警事件</small></span><em>128</em></div>
-              <div class="source-item source-green"><i>P</i><span><b>Prometheus</b><small>指标数据</small></span><em>2.4k</em></div>
-              <div class="source-item source-cyan"><i>E</i><span><b>EFK</b><small>实时日志</small></span><em>8.6k</em></div>
-            </div>
-            <div class="flow-rail"><i></i><i></i><i></i></div>
-            <div class="ai-engine">
-              <div class="engine-orbit"><span>AI</span><i></i><i></i><i></i></div>
-              <small>AIOPS ANALYSIS ENGINE</small>
-              <b>实时关联分析</b>
-              <div class="engine-status"><span></span>模型推理中</div>
-            </div>
-            <div class="insight-panel">
-              <div class="insight-head"><span>ROOT CAUSE</span><em>置信度 96%</em></div>
-              <strong>K8s Pod 内存泄漏</strong>
-              <p>关联 37 条告警与 1,284 条日志，已定位异常服务。</p>
-              <div class="insight-metrics"><span><i></i>噪声归并 73%</span><span><i></i>诊断耗时 3.2s</span></div>
-            </div>
-            <div class="auto-action"><span>✓</span><div><b>自动处置建议已生成</b><small>动态阈值 · Pod重启 · SOP调用</small></div></div>
-          </div>
-          <div class="pain-list reveal">
-            <article><span>01</span><div><h3>告警太多</h3><p class="pain-problem">告警噪声大，误报漏报频繁，值班人员难以及时判断优先级。</p><div class="upgrade-direction"><b>AIOps升级方向</b><p>用大模型辅助分析告警上下文，生成处理建议与报告。</p></div></div></article>
-            <article><span>02</span><div><h3>日志太乱</h3><p class="pain-problem">系统日志分散在不同服务中，人工检索耗时且难定位问题。</p><div class="upgrade-direction"><b>AIOps升级方向</b><p>搭建EFK日志平台，并接入AI完成日志归因和异常分析。</p></div></div></article>
-            <article><span>03</span><div><h3>阈值难设</h3><p class="pain-problem">固定阈值无法适应业务波动，阈值过高漏报，过低扰民。</p><div class="upgrade-direction"><b>AIOps升级方向</b><p>结合Prometheus/Zabbix与AI模型实现自动阈值生成。</p></div></div></article>
-            <article><span>04</span><div><h3>排障靠经验</h3><p class="pain-problem">故障处理依赖资深工程师经验，新人难以快速接手。</p><div class="upgrade-direction"><b>AIOps升级方向</b><p>沉淀知识库、SOP和智能体，让经验可复用、可调用。</p></div></div></article>
-            <article><span>05</span><div><h3>重复任务多</h3><p class="pain-problem">巡检、备份、重启、发布、检查长期占用时间。</p><div class="upgrade-direction"><b>AIOps升级方向</b><p>用Python、Jenkins、K8s、MCP实现自动化和自然语言运维。</p></div></div></article>
-          </div>
+        <div class="section-heading wide-heading reveal"><h2>从传统运维到<em>AI运维</em></h2><p>越来越多企业开始将AI接入监控、日志、告警和自动化运维流程，能够把AI与运维结合的人，将拥有更强的竞争力。</p></div>
+        <div class="ops-comparison reveal">
+          <div class="comparison-head"><span>运维场景</span><strong>传统运维</strong><strong>AIOps升级 🔥</strong></div>
+          <article><span>告警处理</span><p>告警数量多，依赖人工逐条排查，处理效率低</p><p>AI自动聚合分析告警，并生成处理建议</p></article>
+          <article><span>日志分析</span><p>日志分散且繁杂，人工检索难以快速定位问题</p><p>AI智能完成日志归因、异常识别与根因分析</p></article>
+          <article><span>阈值设置</span><p>监控阈值主要依靠个人经验，容易误报或漏报</p><p>AI结合历史数据自动生成并持续优化阈值</p></article>
+          <article><span>故障排查</span><p>关键经验依赖资深人员，难以沉淀和复用</p><p>知识库与智能体沉淀经验，辅助快速诊断</p></article>
+          <article><span>重复任务</span><p>巡检、重启、发布等工作长期占用人工时间</p><p>Python + K8s + MCP实现自动化智能运维</p></article>
         </div>
+        <div class="section-footer-action reveal"><button class="button" type="button" data-open-lead-modal>了解课程详情</button></div>
       </div>
     </section>
 
     <section class="section audience-section" id="audience">
       <div class="container">
-        <div class="section-heading centered no-wrap-heading reveal"><span class="section-tag">FOR WHOM</span><h2>无论从哪里出发，<em>都能找到升级路径</em></h2><p>面向运维、云原生、DevOps、DBA 与 AI 开发等技术人群，建立可落地的智能运维能力。</p></div>
+        <div class="section-heading centered no-wrap-heading reveal"><h2><em>AIOps</em>适合哪些人学？</h2><p>面向运维、云原生、DevOps、DBA 与 AI 开发等技术人群，建立可落地的智能运维能力。</p></div>
         <div class="audience-grid">
-          <article class="audience-card reveal"><h3>传统运维工程师</h3><p>想从“装系统、查日志、处理告警”升级到“会智能告警、会自动化、会AI运维”的技术人。</p><b>岗位转型</b></article>
-          <article class="audience-card reveal"><h3>K8s/云原生运维工程师</h3><p>想深入掌握Kubernetes核心资源、调度、部署、监控，并结合AI完成智能诊断和自动化管理的人。</p><b>能力进阶</b></article>
-          <article class="audience-card reveal"><h3>DevOps工程师</h3><p>想用Jenkins、ArgoCD、Python、K8s和AI提升CI/CD交付效率，推动团队自动化升级的人。</p><b>效率升级</b></article>
-          <article class="audience-card reveal"><h3>数据库管理员DBA</h3><p>想把AI用于MySQL、Redis、MongoDB等数据库性能分析、慢查询分析、监控预测的人。</p><b>智能分析</b></article>
-          <article class="audience-card reveal"><h3>Python/AI开发与数据工程师</h3><p>想把大模型、RAG、知识库、智能体、多模态模型部署到本地或K8s环境，做实际项目落地的人。</p><b>项目拓展</b></article>
-          <article class="audience-card reveal"><h3>大模型与AI技术爱好者</h3><p>想系统理解NLP、RNN、注意力机制、Transformer、大模型微调、向量数据库与智能体应用的人。</p><b>体系学习</b></article>
+          <article class="audience-card reveal"><span class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01M12 7h5M12 17h5"/></svg></span><h3>传统运维工程师</h3><p>想从“装系统、查日志、处理告警”升级到“会智能告警、会自动化、会AI运维”的技术人。</p><b>岗位转型</b></article>
+          <article class="audience-card reveal"><span class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9z"/><circle cx="12" cy="12" r="3"/><path d="M12 6v3M12 15v3M6.8 9l2.6 1.5M14.6 13.5l2.6 1.5M6.8 15l2.6-1.5M14.6 10.5 17.2 9"/></svg></span><h3>K8s/云原生运维工程师</h3><p>想深入掌握Kubernetes核心资源、调度、部署、监控，并结合AI完成智能诊断和自动化管理的人。</p><b>能力进阶</b></article>
+          <article class="audience-card reveal"><span class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8c-3 0-5 2-5 4s2 4 5 4c4 0 6-8 10-8 2 0 3 2 3 4s-1 4-3 4c-4 0-6-8-10-8z"/></svg></span><h3>DevOps工程师</h3><p>想用Jenkins、ArgoCD、Python、K8s和AI提升CI/CD交付效率，推动团队自动化升级的人。</p><b>效率升级</b></article>
+          <article class="audience-card reveal"><span class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7"/></svg></span><h3>数据库管理员DBA</h3><p>想把AI用于MySQL、Redis、MongoDB等数据库性能分析、慢查询分析、监控预测的人。</p><b>智能分析</b></article>
+          <article class="audience-card reveal"><span class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-5 6 5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></span><h3>Python/AI开发与数据工程师</h3><p>想把大模型、RAG、知识库、智能体、多模态模型部署到本地或K8s环境，做实际项目落地的人。</p><b>项目拓展</b></article>
+          <article class="audience-card reveal"><span class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3v1a3 3 0 0 0-1 5.5A3 3 0 0 0 9 19M15 4a3 3 0 0 1 3 3v1a3 3 0 0 1 1 5.5A3 3 0 0 1 15 19M9 4v16M15 4v16M9 9h3M12 15h3"/></svg></span><h3>大模型与AI技术爱好者</h3><p>想系统理解NLP、RNN、注意力机制、Transformer、大模型微调、向量数据库与智能体应用的人。</p><b>体系学习</b></article>
         </div>
-      </div>
-    </section>
-
-    <section class="section outcomes-section" id="outcomes">
-      <div class="container outcomes-layout">
-        <div class="section-heading reveal"><span class="section-tag">OUTCOMES</span><h2>学完不只是“懂”，<br>更要<em>真正做得出来</em></h2><p>把课程卖点转化为可以真正应用到工作和项目中的能力收益。</p><button class="button" type="button" data-open-lead-modal>领取学习路线</button></div>
-        <div class="outcome-list reveal">
-          <article><span>01</span><div><h3>掌握AIOps完整学习路径</h3><p>从大模型基础、Python编程，到运维工具实践、AI集成、项目落地。</p></div></article>
-          <article><span>02</span><div><h3>搭建常见运维基础设施</h3><p>能独立搭建Zabbix、Prometheus、EFK、Kubernetes等常见运维基础设施，并理解核心原理。</p></div></article>
-          <article><span>03</span><div><h3>接入大模型分析流程</h3><p>能把DeepSeek等大模型接入告警、日志、监控数据分析流程，生成智能分析报告和处理建议。</p></div></article>
-          <article><span>04</span><div><h3>完成性能预测和自动阈值</h3><p>能结合Prophet、机器学习、Prometheus/Zabbix数据，完成性能预测和自动阈值生成。</p></div></article>
-          <article><span>05</span><div><h3>实现自动化运维任务</h3><p>能通过Python脚本实现巡检、备份、服务重启、资源监控等自动化运维任务。</p></div></article>
-          <article><span>06</span><div><h3>掌握MLOps/LLMOps全生命周期</h3><p>能理解MLOps/LLMOps全生命周期，掌握模型微调、评估、部署、注册、自动化发布等关键环节。</p></div></article>
-          <article><span>07</span><div><h3>开发MCP自然语言运维平台</h3><p>能尝试开发MCP自然语言运维平台，用对话方式管理K8s、MySQL、飞书、微信等服务。</p></div></article>
-        </div>
+        <div class="section-footer-action reveal"><button class="button" type="button" data-open-lead-modal>查看是否适合学习</button></div>
       </div>
     </section>
 
     <section class="section roadmap-section" id="curriculum">
       <div class="container">
-        <div class="section-heading centered no-wrap-heading reveal"><span class="section-tag">LEARNING PATH</span><h2>从基础到落地，<em>按企业实战路径学习</em></h2><p>课程采用“AI基础 → Python与LangChain → 运维环境搭建 → 核心监控工具 → AI智能告警/日志分析 → K8s与MLOps → MCP自然语言运维”的路径设计。你不是零散学习几个工具，而是围绕企业运维真实场景，逐步搭建自己的AIOps能力体系。</p></div>
+        <div class="section-heading centered no-wrap-heading reveal"><h2>AIOps学习路线</h2><p>从基础到实战，全方面掌握AIOps</p></div>
         <ol class="roadmap reveal">
-          <li><span>01</span><div><b>第一阶段：AI与编程基础</b><small>大模型入门、提示词工程、智能体、RAG、Python基础、LangChain基础与进阶开发</small><em>先理解AI和大模型如何工作，再具备基本开发能力</em></div></li>
-          <li><span>02</span><div><b>第二阶段：运维环境与工具</b><small>Linux/Docker/Ollama/DeepSeek部署、K8s集群搭建、Zabbix、Prometheus、EFK</small><em>搭建企业运维常用技术底座</em></div></li>
-          <li><span>03</span><div><b>第三阶段：AI+监控告警</b><small>Zabbix+DeepSeek智能告警、Prophet预测指标、Prometheus+AI自动阈值</small><em>让监控从“看数据”升级为“会分析、会预测”</em></div></li>
-          <li><span>04</span><div><b>第四阶段：AI+日志分析</b><small>EFK日志平台、ChatOps、数据库智能运维、日志采集处理与大模型分析</small><em>让日志从“人工搜索”升级为“智能归因”</em></div></li>
-          <li><span>05</span><div><b>第五阶段：K8s与MLOps</b><small>K8s核心资源、ArgoCD、AI智能体性能预测、图片预测、自动重启、自动化脚本</small><em>把AI能力接入云原生运维流程</em></div></li>
-          <li><span>06</span><div><b>第六阶段：进阶应用</b><small>VibeCoding、大模型高级应用、DeepSeek集成开发、LangChain1.0、OpenClaw、MCP自然语言管理K8s/MySQL</small><em>面向未来运维形态，探索智能体与自然语言运维平台</em></div></li>
+          <li><span>01</span><div><b>第一阶段｜AI开发基础</b><small>大模型、Prompt、Agent、RAG、Python、LangChain</small><em>建立AI开发能力</em></div></li>
+          <li><span>02</span><div><b>第二阶段｜企业运维环境</b><small>Linux、Docker、Ollama、DeepSeek、Kubernetes</small><em>搭建企业运维基础环境</em></div></li>
+          <li><span>03</span><div><b>第三阶段｜AI智能监控</b><small>Zabbix、Prometheus、Grafana、智能告警</small><em>让监控具备AI分析能力</em></div></li>
+          <li><span>04</span><div><b>第四阶段｜AI日志分析</b><small>EFK、ChatOps、数据库智能分析</small><em>实现日志智能归因</em></div></li>
+          <li><span>05</span><div><b>第五阶段｜Kubernetes智能运维</b><small>Kubernetes、ArgoCD、AI Agent</small><em>打造企业级AIOps平台</em></div></li>
+          <li><span>06</span><div><b>第六阶段｜AI进阶开发</b><small>DeepSeek、LangChain、VibeCoding、OpenClaw、MCP</small><em>掌握未来智能运维技术体系</em></div></li>
+          <li class="roadmap-cta-card"><span>07</span><div><b class="roadmap-more">···</b><button class="roadmap-inline-button" type="button" data-open-lead-modal>查看完整学习路线</button></div></li>
         </ol>
 
-        <div class="curriculum-tabs reveal" role="tablist" aria-label="课程模块类型">
-          <button class="curriculum-tab active" type="button" role="tab" aria-selected="true" aria-controls="required-panel" id="required-tab" data-course-tab="required-panel"><span>10</span> 核心必修模块</button>
-          <button class="curriculum-tab" type="button" role="tab" aria-selected="false" aria-controls="advanced-panel" id="advanced-tab" data-course-tab="advanced-panel"><span>8</span> 进阶选修模块</button>
-        </div>
-        <div class="course-panel active" id="required-panel" role="tabpanel" aria-labelledby="required-tab">
+        <div class="section-heading centered curriculum-heading reveal"><h2>AIOps课程内容介绍</h2><p>18大精品模块，覆盖AI+运维完整技术体系</p></div>
+        <div class="curriculum-columns">
+        <div class="course-panel active" id="required-panel">
+          <h3 class="course-column-title">必修模块</h3>
           <div class="accordion course-accordion">
-            <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span><i>01</i>大模型入门</span><b>−</b></button></h3><div class="accordion-content"><p>从提示词工程、智能体、RAG、知识库开始，建立大模型应用的基础认知，为后续 AI 运维场景打基础。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>02</i>Python与LangChain编程</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习Python基础语法、LangChain组件、PromptTemplate、链式调用、与源码对话、知识图谱等内容，具备AI应用开发能力。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>03</i>学习环境搭建</span><b>+</b></button></h3><div class="accordion-content" hidden><p>完成 Linux、Docker、云主机、Windows、Ollama、DeepSeek、本地可视化界面、K8s 集群和 Python 环境配置。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>04</i>Zabbix 监控运维实战指南</span><b>+</b></button></h3><div class="accordion-content" hidden><p>系统学习 Zabbix 架构、server / agent / proxy、监控项、触发器、自动发现、邮件告警、Grafana 大屏和自定义监控项。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>05</i>Zabbix智能告警与Prophet预测指标</span><b>+</b></button></h3><div class="accordion-content" hidden><p>将Zabbix与DeepSeek结合，实现智能运维告警分析；学习Prophet模型，用监控数据做趋势预测。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>06</i>Prometheus 监控实战指南</span><b>+</b></button></h3><div class="accordion-content" hidden><p>掌握 Prometheus 数据模型、PromQL、服务发现、node-exporter、MySQL 监控、联邦集群和 K8s 监控。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>07</i>Prometheus 与自动阈值生成</span><b>+</b></button></h3><div class="accordion-content" hidden><p>基于 Prometheus 采集数据，结合 DeepSeek 与 AI 模型，探索自动阈值生成和智能告警处理。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>08</i>EFK日志收集平台搭建和使用</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习Elasticsearch、Filebeat、Logstash、Kafka、Kibana等日志平台组件，完成统一日志收集与分析。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>09</i>EFK 日志平台与 ChatOps</span><b>+</b></button></h3><div class="accordion-content" hidden><p>将 EFK 与大模型结合，完成智能日志分析、数据库慢查询分析、LLMOps 模型微调、部署、评估与自动化。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>10</i>Kubernetes 与运维 MLOps</span><b>+</b></button></h3><div class="accordion-content" hidden><p>从 K8s 安装、Pod、Deployment、Service、存储、StatefulSet，到 ArgoCD、AI 智能体、自动重启与自动化运维。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span><i>01</i>AI大模型与开发基础</span><b>−</b></button></h3><div class="accordion-content"><p>学习大模型、Prompt、Agent、RAG等核心概念，建立AI应用开发基础认知。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>02</i>企业级AI开发环境</span><b>+</b></button></h3><div class="accordion-content" hidden><p>完成Linux、Docker、Ollama、DeepSeek、Kubernetes及Python开发环境搭建。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>03</i>AI智能监控体系</span><b>+</b></button></h3><div class="accordion-content" hidden><p>围绕Zabbix、Prometheus、Grafana建立企业智能监控体系。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>04</i>AI智能告警与日志分析</span><b>+</b></button></h3><div class="accordion-content" hidden><p>接入DeepSeek分析告警和日志，生成异常判断、根因定位与处理建议。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>05</i>Kubernetes智能运维</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习Kubernetes核心资源、ArgoCD、AI Agent及自动化运维场景。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>06</i>Zabbix监控实践</span><b>+</b></button></h3><div class="accordion-content" hidden><p>掌握Zabbix架构、监控项、触发器、自动发现、Grafana可视化和统一告警。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>07</i>Prometheus监控实践</span><b>+</b></button></h3><div class="accordion-content" hidden><p>掌握Prometheus数据模型、PromQL、服务发现、Alertmanager与K8s监控。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>08</i>EFK日志平台</span><b>+</b></button></h3><div class="accordion-content" hidden><p>完成Elasticsearch、Fluentd、Kibana日志采集、检索、分析与异常追踪。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>09</i>Python与LangChain开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习Python基础、LangChain核心组件、链式调用和企业AI应用开发。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>10</i>企业级AIOps实战</span><b>+</b></button></h3><div class="accordion-content" hidden><p>综合监控、告警、日志、Kubernetes与AI能力，完成企业级AIOps项目落地。</p></div></article>
           </div>
         </div>
-        <div class="course-panel" id="advanced-panel" role="tabpanel" aria-labelledby="advanced-tab" hidden>
+        <div class="course-panel" id="advanced-panel">
+          <h3 class="course-column-title">进阶模块</h3>
           <div class="accordion course-accordion">
-            <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span><i>A1</i>小白也能 AI 编程：初识 VibeCoding</span><b>−</b></button></h3><div class="accordion-content"><p>学习 VibeCoding 思维方式、提示词实战、Trae 应用、Cursor 开发与 Coze 智能体前后端开发。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A2</i>大模型相关知识</span><b>+</b></button></h3><div class="accordion-content" hidden><p>系统理解NLP、词向量、RNN、注意力机制、Transformer、GPT模型、LangChain、Autogen多智能体。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A3</i>大模型高级应用</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习大模型微调、效果与成本对比、BERT/LLaMA等微调实践、面向企业应用的高级开发思路。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A4</i>DeepSeek 应用集成与开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>从 DeepSeek 原理、R1 训练流程、开放平台 API 接入，到 LangChain 协同、应用开发与集成。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A5</i>LangChain 1.0 全栈开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>围绕 LangChain 1.0 学习环境搭建、核心组件、应用开发与全栈落地。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A6</i>OpenClaw 基础教程</span><b>+</b></button></h3><div class="accordion-content" hidden><p>了解 OpenClaw 核心架构、运作原理、优势与应用场景。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A7</i>AIOps进阶：故障诊断工具开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>开发K8s Pod诊断工具、EFK错误日志传给大模型、ML自动设置告警阈值、知识库问答系统。</p></div></article>
-            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A8</i>MCP自然语言管理K8s、MySQL等服务</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习MCP协议，用自然语言管理K8s资源、MySQL服务、SQL操作，并对接飞书、微信实现自动运维。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span><i>A1</i>VibeCoding</span><b>−</b></button></h3><div class="accordion-content"><p>学习VibeCoding思维、提示词实战、Cursor开发与智能体应用构建。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A2</i>DeepSeek开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>掌握DeepSeek开放平台API接入、应用集成及企业场景开发。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A3</i>LangChain全栈开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>围绕LangChain核心组件、应用开发与全栈落地展开实践。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A4</i>大模型高级应用</span><b>+</b></button></h3><div class="accordion-content" hidden><p>学习模型微调、多智能体协作及企业级大模型高级应用。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A5</i>MCP自然语言运维</span><b>+</b></button></h3><div class="accordion-content" hidden><p>使用自然语言管理Kubernetes、MySQL等基础设施与服务。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A6</i>OpenClaw实践</span><b>+</b></button></h3><div class="accordion-content" hidden><p>理解OpenClaw核心架构、运行原理与智能运维应用场景。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A7</i>AI故障诊断开发</span><b>+</b></button></h3><div class="accordion-content" hidden><p>开发K8s Pod诊断、日志分析、自动阈值和知识库问答工具。</p></div></article>
+            <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span><i>A8</i>LLMOps模型运维</span><b>+</b></button></h3><div class="accordion-content" hidden><p>完成模型微调、部署、评估、发布及全生命周期管理。</p></div></article>
           </div>
         </div>
+        </div>
+        <div class="section-footer-action reveal"><button class="button" type="button" data-open-lead-modal>领取完整课程大纲</button></div>
       </div>
     </section>
 
     <section class="section projects-section" id="projects">
       <div class="container">
-        <div class="section-heading light reveal"><span class="section-tag">PROJECTS</span><h2>6大企业级项目，<em>把能力做成作品</em></h2><p>通过企业级项目，把Zabbix、Prometheus、EFK、K8s、DeepSeek、LLMOps贯穿到真实业务场景中。</p></div>
+        <div class="section-heading light reveal"><h2>6大企业级项目实战</h2><p>所学即所用，每一个项目都来自企业真实场景</p></div>
         <div class="project-grid">
-          <article class="project-card featured reveal"><div class="project-top"><span>PROJECT 01</span><i>ZB</i></div><div class="project-visual"><img src="assets/projects/project-01.png" alt="企业级IT基础设施智能监控平台界面"></div><h3>项目一：企业级IT基础设施智能监控平台</h3><p>基于Zabbix搭建统一监控平台，覆盖服务器、网络设备、数据库、中间件和容器，实现自动发现、模板化接入、Grafana可视化与统一告警。</p><ul><li>Zabbix</li><li>Grafana</li><li>统一告警</li></ul></article>
-          <article class="project-card reveal"><div class="project-top"><span>PROJECT 02</span><i>CI</i></div><div class="project-visual"><img src="assets/projects/project-02.png" alt="Python、Jenkins与Kubernetes构建AIOps平台流水线"></div><h3>项目二：Python + Jenkins + K8s AIOps平台</h3><p>通过Jenkins调用Kubernetes API动态创建Slave Pods，完成代码拉取、编译、镜像构建、多环境部署与流水线交付。</p><ul><li>Python</li><li>Jenkins</li><li>K8s</li></ul></article>
-          <article class="project-card reveal"><div class="project-top"><span>PROJECT 03</span><i>EF</i></div><div class="project-visual"><img src="assets/projects/project-03.png" alt="EFK日志收集与分析平台界面"></div><h3>项目三：基于EFK的日志收集与分析平台</h3><p>搭建Elasticsearch + Fluentd + Kibana日志平台，集中收集系统与应用日志，实现检索、分析、可视化与异常追踪。</p><ul><li>Elasticsearch</li><li>Fluentd</li><li>Kibana</li></ul></article>
-          <article class="project-card reveal"><div class="project-top"><span>PROJECT 04</span><i>AI</i></div><div class="project-visual"><img src="assets/projects/project-04.png" alt="Zabbix与DeepSeek智能日志分析架构图"></div><h3>项目四：Zabbix + DeepSeek AI智能日志分析</h3><p>让DeepSeek自动解析监控数据，生成智能分析报表，为故障判断、告警处理和运维决策提供支持。</p><ul><li>DeepSeek</li><li>智能分析报表</li></ul></article>
-          <article class="project-card reveal"><div class="project-top"><span>PROJECT 05</span><i>PM</i></div><div class="project-visual"><img src="assets/projects/project-05.png" alt="Prometheus与DeepSeek智能运维流程图"></div><h3>项目五：Prometheus + DeepSeek智能运维</h3><p>结合Prometheus Server、Alertmanager与DeepSeek API，让AI自动分析告警内容，生成告警说明、风险判断和处理建议。</p><ul><li>Prometheus</li><li>Alertmanager</li><li>DeepSeek API</li></ul></article>
-          <article class="project-card reveal"><div class="project-top"><span>PROJECT 06</span><i>LL</i></div><div class="project-visual"><img src="assets/projects/project-06.png" alt="LLMOps全生命周期运维流程图"></div><h3>项目六：LLMOps全生命周期运维实战</h3><p>基于LLaMA-Factory完成模型微调，结合脚本合并模型、llama.cpp格式转换、MLflow注册评估，实现模型部署与运维闭环。</p><ul><li>LLaMA-Factory</li><li>llama.cpp</li><li>MLflow</li></ul></article>
+          <article class="project-card featured reveal"><div class="project-top"><span>PROJECT 01</span><i>ZB</i></div><div class="project-visual"><img src="assets/projects/project-01.png" alt="企业级智能监控平台界面"></div><h3>项目一：企业级智能监控平台</h3><p>基于Zabbix搭建统一监控、自动发现、Grafana可视化与统一告警。</p><ul><li>Zabbix</li><li>Grafana</li><li>统一告警</li></ul></article>
+          <article class="project-card reveal"><div class="project-top"><span>PROJECT 02</span><i>AI</i></div><div class="project-visual"><img src="assets/projects/project-05.png" alt="Prometheus与DeepSeek智能告警流程图"></div><h3>项目二：AI智能告警平台</h3><p>结合Prometheus与DeepSeek，实现AI智能告警分析、风险判断与处理建议。</p><ul><li>Prometheus</li><li>DeepSeek</li><li>智能告警</li></ul></article>
+          <article class="project-card reveal"><div class="project-top"><span>PROJECT 03</span><i>EF</i></div><div class="project-visual"><img src="assets/projects/project-03.png" alt="企业日志分析平台界面"></div><h3>项目三：企业日志分析平台</h3><p>搭建EFK日志平台，实现日志采集、检索、分析与异常追踪。</p><ul><li>Elasticsearch</li><li>Fluentd</li><li>Kibana</li></ul></article>
+          <article class="project-card reveal"><div class="project-top"><span>PROJECT 04</span><i>K8</i></div><div class="project-visual"><img src="assets/projects/project-02.png" alt="Python、Jenkins与Kubernetes自动化运维流水线"></div><h3>项目四：Kubernetes自动化运维平台</h3><p>结合Python、Jenkins、Kubernetes，实现持续集成、多环境发布与自动化部署。</p><ul><li>Python</li><li>Jenkins</li><li>Kubernetes</li></ul></article>
+          <article class="project-card reveal"><div class="project-top"><span>PROJECT 05</span><i>AI</i></div><div class="project-visual"><img src="assets/projects/project-04.png" alt="DeepSeek智能日志分析架构图"></div><h3>项目五：AI日志分析平台</h3><p>利用DeepSeek完成日志智能分析、故障定位与自动报告生成。</p><ul><li>DeepSeek</li><li>故障定位</li><li>自动报告</li></ul></article>
+          <article class="project-card reveal"><div class="project-top"><span>PROJECT 06</span><i>LL</i></div><div class="project-visual"><img src="assets/projects/project-06.png" alt="LLMOps模型运维全生命周期流程图"></div><h3>项目六：LLMOps模型运维平台</h3><p>完成模型微调、部署、评估、发布及全生命周期管理。</p><ul><li>模型微调</li><li>部署评估</li><li>全生命周期</li></ul></article>
         </div>
+        <div class="section-footer-action projects-action reveal"><button class="button" type="button" data-open-lead-modal>查看项目详情</button></div>
       </div>
     </section>
 
-    <section class="section live-section" id="live">
-      <div class="container live-layout">
-        <div class="section-heading reveal"><span class="section-tag">LIVE CLASSES</span><h2>8场直播课，<br><em>每周陪你攻克重点</em></h2><p>除了体系化视频课，本课程还配套8场直播课。视频课用于打基础和系统学习，直播课用于项目扩展、重点串讲与互动答疑，帮助学员把知识真正用到工作场景中。</p><div class="live-note"><strong>8 × 2h</strong><span>每周1次<br>每次约2小时</span></div></div>
-        <ol class="live-timeline reveal">
-          <li><span>01</span><div><b>总体课程介绍 + 大模型基本原理</b><small>主讲人：崔老师</small></div></li>
-          <li><span>02</span><div><b>Python基础编程和环境搭建</b><small>主讲人：韩老师</small></div></li>
-          <li><span>03</span><div><b>大模型运维协同、集成、开发</b><small>主讲人：崔老师</small></div></li>
-          <li><span>04</span><div><b>Zabbix运维原理与实践</b><small>主讲人：韩老师</small></div></li>
-          <li><span>05</span><div><b>Zabbix + DeepSeek实现智能运维告警</b><small>主讲人：崔老师</small></div></li>
-          <li><span>06</span><div><b>Prometheus运维原理与实践</b><small>主讲人：韩老师</small></div></li>
-          <li><span>07</span><div><b>Prometheus + AI模型实现自动阈值生成</b><small>主讲人：崔老师</small></div></li>
-          <li><span>08</span><div><b>Kubernetes与运维MLOps</b><small>主讲人：韩老师</small></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section highlights-section" id="highlights">
+    <section class="section highlights-section" id="highlights" hidden>
       <div class="container">
-        <div class="section-heading centered reveal"><span class="section-tag">WHY THIS COURSE</span><h2>不止讲工具，更讲<em>如何组合落地</em></h2></div>
+        <div class="section-heading centered reveal"><h2>不止讲工具，更讲<em>如何组合落地</em></h2></div>
         <div class="highlight-grid">
           <article class="reveal"><span>01</span><div class="highlight-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20c.4-4 2.4-6 5.5-6s5.1 2 5.5 6M13.5 15c1-.8 2.1-1.2 3.5-1.2 2.7 0 4.2 1.8 4.5 5.2"/></svg></div><h3>双讲师授课</h3><p>崔老师主讲大模型基础、高级应用、AI与运维结合开发；韩老师主讲K8s、云原生、Python基础、运维工具实践。两条能力线组合，兼顾AI与运维落地。</p></article>
           <article class="reveal"><span>02</span><div class="highlight-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5h6.5c1.2 0 2 .8 2 2V20c0-1.4-.9-2.3-2.3-2.3H4zM20 4.5h-5.5c-1.2 0-2 .8-2 2V20c0-1.4.9-2.3 2.3-2.3H20z"/><path d="m16 9 1.2 1.2L19.5 8"/></svg></div><h3>理论 + 实战结合</h3><p>不只讲概念，还会在Python、Zabbix、Prometheus、EFK、K8s等场景中安排大量实践操作，让学习结果更接近真实工作。</p></article>
@@ -207,17 +163,17 @@
 
     <section class="section teachers-section" id="teachers">
       <div class="container">
-        <div class="section-heading reveal"><span class="section-tag">INSTRUCTORS</span><h2>懂AI，也懂运维，<br><em>更懂项目如何落地</em></h2></div>
+        <div class="section-heading reveal"><h2>双讲师联合授课</h2><p>AI开发×云原生运维 双领域专家</p></div>
         <div class="teacher-grid">
-          <article class="teacher-card reveal"><div class="teacher-avatar ai-avatar"><img src="assets/崔皓.png" alt="崔皓老师"><span>崔皓</span><i>AI</i></div><div class="teacher-content"><span class="teacher-role">大模型与AI应用方向</span><h3>崔皓老师</h3><p>51CTO学堂特级讲师、51CTO平台特约作者、社区编辑。从事IT工作22年，长期参与软件研发、需求分析、架构设计与项目管理，曾在惠普、中科曙光等企业任职。</p><p>擅长大模型基础、高级应用、AI开发与企业级应用落地，能够把大模型、智能体、RAG、LangChain等技术拆解成可学习、可实践的项目路径。</p><ul><li>大模型应用</li><li>RAG / 智能体</li><li>企业落地</li></ul></div></article>
-          <article class="teacher-card reveal"><div class="teacher-avatar ops-avatar"><img src="assets/韩先超.png" alt="韩先超老师"><span>韩先超</span><i>K8s</i></div><div class="teacher-content"><span class="teacher-role">K8s与云原生运维方向</span><h3>韩先超老师</h3><p>51CTO学堂K8S教学总监、Python教学总监，K8s架构师、云计算架构师、51CTO学堂年度十大杰出讲师。</p><p>长期深耕Linux、Kubernetes、云原生、Python、DevOps与企业级运维实践，擅长把复杂运维工具讲清楚、讲落地，帮助学员从工具使用走向项目实战。</p><ul><li>Kubernetes</li><li>云原生</li><li>Python / DevOps</li></ul></div></article>
+          <article class="teacher-card reveal"><div class="teacher-avatar ai-avatar"><img src="assets/崔皓.png" alt="崔皓老师"><span>崔皓</span></div><div class="teacher-content"><span class="teacher-role">大模型与AI应用方向</span><h3>崔皓老师</h3><p>51CTO学堂特级讲师，22年IT行业经验，曾任职惠普、中科曙光。</p><p>长期深耕大模型、智能体、RAG、LangChain及企业AI应用开发，擅长将复杂AI技术拆解为可落地的项目实践。</p><ul><li>大模型应用</li><li>RAG / 智能体</li><li>企业落地</li></ul><button class="button teacher-talk" type="button" data-open-lead-modal>与崔老师对话</button></div></article>
+          <article class="teacher-card reveal"><div class="teacher-avatar ops-avatar"><img src="assets/韩先超.png" alt="韩先超老师"><span>韩先超</span></div><div class="teacher-content"><span class="teacher-role">K8s与云原生运维方向</span><h3>韩先超老师</h3><p>51CTO学堂K8S教学总监、Python教学总监，Kubernetes架构师、云计算架构师。</p><p>长期从事Linux、Kubernetes、DevOps及企业级运维实践，拥有丰富的大型项目经验。</p><ul><li>Kubernetes</li><li>云原生</li><li>Python / DevOps</li></ul><button class="button teacher-talk" type="button" data-open-lead-modal>与韩老师对话</button></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section service-section" id="service">
+    <section class="section service-section" id="service" hidden>
       <div class="container">
-        <div class="section-heading centered reveal"><span class="section-tag">LEARNING SUPPORT</span><h2>体系化学习，也有<em>持续陪伴</em></h2><p>通过视频课、直播课与项目实战，解决“学不会、没时间、没人答疑”的顾虑。</p></div>
+        <div class="section-heading centered reveal"><h2>体系化学习，也有<em>持续陪伴</em></h2><p>通过视频课、直播课与项目实战，解决“学不会、没时间、没人答疑”的顾虑。</p></div>
         <div class="service-grid">
           <article class="reveal"><span>VIDEO</span><h3>视频课</h3><p>随时学习，适合利用碎片时间推进；课程体系完整，适合从基础到项目逐步消化。</p><b>18个模块内容，10必修 + 8选修，120+小时</b></article>
           <article class="reveal"><span>LIVE</span><h3>直播课</h3><p>围绕主流项目、课程扩展与问题答疑展开，帮助学员把知识点和工作场景连接起来。</p><b>8节直播课，每周1次，每次约2小时</b></article>
@@ -227,22 +183,32 @@
       </div>
     </section>
 
+    <section class="section resources-section" id="resources">
+      <div class="container">
+        <div class="section-heading reveal"><h2>学习资料免费领</h2></div>
+        <div class="resource-grid">
+          <article class="resource-card reveal"><h3>企业级智能运维助手：从私有化部署到知识库落地</h3><ul><li>DeepSeek + RAG 构建企业专属运维助手</li><li>打通私有知识库与大模型智能问答</li><li>掌握企业级 AI 运维私有化落地全流程</li></ul></article>
+          <article class="resource-card reveal"><h3>AI智能运维实战：告警降噪与故障根因分析</h3><ul><li>Prometheus + LLM 实现智能阈值优化与告警降噪</li><li>SkyWalking + LLM 自动定位微服务故障根因</li><li>覆盖告警分析、链路追踪、故障诊断核心场景</li></ul></article>
+        </div>
+        <div class="section-footer-action resource-action reveal"><button class="button" type="button" data-open-lead-modal>0元领取全套资料</button></div>
+        <p class="resource-gift reveal">加赠《DeepSeek使用指南：打造专属你的AI生产力引擎》</p>
+      </div>
+    </section>
+
     <section class="section faq-section" id="faq">
       <div class="container faq-layout">
-        <div class="section-heading reveal"><span class="section-tag">FAQ</span><h2>开始之前，<br><em>你可能还想问</em></h2><p>如果还有其他问题，可以提交咨询，我们会根据你的基础和目标给出学习建议。</p><button class="button button-ghost" type="button" data-open-lead-modal>咨询课程顾问</button></div>
+        <div class="section-heading reveal"><h2>常见问题</h2><p>如果还有其他问题，可以提交咨询，我们会根据你的基础和目标给出学习建议。</p></div>
         <div class="accordion faq-accordion reveal">
           <article class="accordion-item"><h3><button type="button" aria-expanded="true"><span>没有AI基础能学吗？</span><b>−</b></button></h3><div class="accordion-content"><p>可以。课程从大模型入门、提示词工程、Python基础和环境搭建开始讲起，后面再逐步进入运维工具与AI结合场景。</p></div></article>
           <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span>只会传统运维，能跟上吗？</span><b>+</b></button></h3><div class="accordion-content" hidden><p>适合。课程本身就是为传统运维升级AIOps设计的，会从Zabbix、Prometheus、EFK、K8s等常见运维工具切入，再逐步接入大模型能力。</p></div></article>
           <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span>课程偏理论还是偏实战？</span><b>+</b></button></h3><div class="accordion-content" hidden><p>课程强调理论与实践结合。既讲大模型、NLP、Transformer、MLOps/LLMOps等基础，也会安排Zabbix智能告警、Prometheus自动阈值、EFK日志分析、K8s诊断等项目。</p></div></article>
           <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span>学习后能直接用于工作吗？</span><b>+</b></button></h3><div class="accordion-content" hidden><p>课程围绕企业常见运维场景设计，包括监控、告警、日志、发布、K8s、数据库、模型部署等内容，适合把学到的方法迁移到实际工作中。</p></div></article>
-          <article class="accordion-item"><h3><button type="button" aria-expanded="false"><span>为什么不是只学一个AI工具？</span><b>+</b></button></h3><div class="accordion-content" hidden><p>AIOps的核心不是会用某个工具，而是把AI能力接入运维流程。课程会教你工具、平台、脚本、API、大模型、智能体和项目如何组合使用。</p></div></article>
         </div>
+        <div class="section-footer-action faq-action reveal"><button class="button" type="button" data-open-lead-modal>咨询其他问题</button></div>
       </div>
     </section>
 
-    <section class="final-cta">
-      <div class="container cta-box reveal"><div><span class="section-tag">START NOW</span><h2>AI不会替代所有运维，<br><em>但会替代只会重复操作的运维</em></h2><p>现在开始系统学习AIOps，把Zabbix、Prometheus、EFK、K8s、DeepSeek、LLMOps和MCP真正用到工作里，让自己从“救火型运维”升级为“智能运维工程师”。</p><ul><li>适合传统运维转型</li><li>适合K8s/云原生运维进阶</li><li>适合DevOps效率升级</li><li>适合DBA和AI开发拓展项目能力</li></ul></div><div class="cta-action"><span>18 MODULES · 120+ HOURS</span><strong>迈出智能运维第一步</strong><button class="button" type="button" data-open-lead-modal>立即报名学习 <span aria-hidden="true">→</span></button><small>提交后将显示演示成功状态，不会发送或保存个人信息</small></div></div>
-    </section>
+    <aside class="floating-offer"><div class="container"><div class="offer-mascot" aria-hidden="true"><img src="assets/customer-service.png" alt=""></div><h2>随报随学，即时开课</h2><p><span>120+小时</span><span>18大模块</span><span>6大企业级实战</span><span>支持花呗分期</span><span>可开发票</span></p><button class="button" type="button" data-open-lead-modal><small>限时优惠</small>马上咨询</button></div></aside>
   </main>
 
   <footer class="site-footer">
@@ -257,25 +223,6 @@
   </footer>
 
   <a class="back-to-top" href="#top" aria-label="返回顶部"><span aria-hidden="true">↑</span>返回顶部</a>
-
-  <div class="mobile-cta"><div><b>AIOps智能运维精品班</b><span>18模块 · 120+小时</span></div><button class="button button-small" type="button" data-open-lead-modal>免费试听</button></div>
-
-  <div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-card" role="document">
-      <button class="modal-close" type="button" aria-label="关闭咨询弹窗" data-close-modal>×</button>
-      <div class="modal-intro"><span class="section-tag">FREE TRIAL</span><h2 id="modal-title">领取试听课与学习路线</h2><p>留下学习信息，查看你更适合从哪一阶段开始。</p></div>
-      <form id="lead-form" novalidate>
-        <div class="form-row"><label for="name">姓名 <em>*</em></label><input id="name" name="name" type="text" autocomplete="name" placeholder="请输入姓名" required><small class="field-error"></small></div>
-        <div class="form-row"><label for="phone">手机号 <em>*</em></label><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="请输入11位手机号" required><small class="field-error"></small></div>
-        <div class="form-row"><label for="role">当前岗位 <em>*</em></label><select id="role" name="role" required><option value="">请选择当前岗位</option><option>传统运维工程师</option><option>K8s / 云原生运维</option><option>DevOps 工程师</option><option>数据库管理员 DBA</option><option>Python / AI 开发</option><option>学生 / 转行学习者</option><option>其他</option></select><small class="field-error"></small></div>
-        <div class="form-row"><label for="goal">学习诉求</label><textarea id="goal" name="goal" rows="3" placeholder="例如：希望提升智能告警和K8s诊断能力"></textarea></div>
-        <label class="privacy-check"><input type="checkbox" id="privacy" required><span>我已了解：这是演示表单，填写内容不会发送或保存。</span></label><small class="field-error privacy-error"></small>
-        <button class="button submit-button" type="submit">提交并领取</button>
-      </form>
-      <div class="form-success" id="form-success" hidden><span>✓</span><h3>提交成功</h3><p>这是页面演示成功状态，未发送或保存任何个人信息。</p><button class="button button-ghost" type="button" data-close-modal>完成</button></div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
