@@ -22,6 +22,31 @@
     if (window.innerWidth > 860) closeNav();
   });
 
+  const qrModal = document.getElementById('qr-modal');
+  const qrCloseButton = qrModal.querySelector('.qr-modal-close');
+  let lastFocusedElement = null;
+
+  const closeQrModal = () => {
+    qrModal.classList.remove('open');
+    qrModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('qr-modal-open');
+    lastFocusedElement?.focus();
+  };
+
+  document.querySelectorAll('[data-open-lead-modal]').forEach((button) => {
+    button.addEventListener('click', () => {
+      lastFocusedElement = document.activeElement;
+      qrModal.classList.add('open');
+      qrModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('qr-modal-open');
+      qrCloseButton.focus();
+    });
+  });
+  document.querySelectorAll('[data-close-qr-modal]').forEach((button) => button.addEventListener('click', closeQrModal));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && qrModal.classList.contains('open')) closeQrModal();
+  });
+
   const revealElements = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
